@@ -16,7 +16,10 @@ var brightness;
 var gBrightness;
 
 function setup() {
-	createCanvas(870, 580);
+	  createCanvas(
+    window.innerWidth,
+    window.innerHeight
+  );
 	pixelDensity(1);
 	video = createCapture(VIDEO);
 	video.size(width / pScale, height / pScale);
